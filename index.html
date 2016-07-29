@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<title> Simple Budget </title>
+	<link rel="stylesheet" link="text/css" href="main.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="script.js"></script>
+	<div class='col-md-3 small-blue'> </div>
+	
+	<div class='col-md-6 small-green'>
+		<h1> <i><strong>Simple Budget! </strong></i></h1>
+	</div>
+	
+	<div class='col-md-3 small-blue'> 
+		<form id='log-in-form'>
+			<div>
+				<label id='log-in-label' for='name'> Name: </label>
+				<input type='text' name='user_name'>
+			</div>
+			
+			<div>
+				<label id='log-in-label' for='password'> Password: </label>
+				<input type='text' name='user_password'> 
+			</div>
+
+			<div class='button' id='log-in-button'>
+				<button type='submit' onclick='simulate_login()'> Log In </button>
+			</div>
+		</form> 
+	</div>
+
+</head>
+
+<body>
+<div class='container-fluid'>
+	<div class='row'>
+		<div class='left-body-fields col-md-8'>
+			
+			Hourly Pay:<p id='display_demo'></p>
+		</div>
+		
+		<div class = 'right-body-fields col-md-4'>
+			<div class='top-body'>
+				<form id='user-budget-form'>
+				<div class='budget-input'>
+					<label for='Hourly Pay'> Hourly Pay: </label>
+					<input type='number' name='hourly_pay'> 
+				</div>
+
+				<div class='budget-input'> 
+					<label for='Hours Worked'> Hours Worked: </label>
+					<input type='number' name='hours_worked'>
+				</div>
+
+				<div class='budget-input'>
+					<label for='Tax'> Tax Percentage: </label>
+					<input type='number' name='tax'>
+				</div>
+
+				<div class='budget-input'>
+					<label for='Days Traveling'> Days Traveling:</label>
+					<input type='number' name='days_traveling'>
+				</div>
+
+				<div class='budget-input'>
+					<label for='Travel Cost'> Daily Travel Cost:</label>
+					<input type='number' name='travel_cost'>
+				</div>
+
+				<div class='budget-input'>
+					<label for='Daily Food Cost'> Daily Food Cost: </label>
+					<input type='number' name='food_cost_daily'>
+				</div>
+
+				<div class='budget-input'>
+					<label for='Leisure Cost'> Leisure Cost: </label>
+					<input type='number' name='leisure_cost'>
+				</div>
+
+				<div class='budget-input'>
+					<label for='Investment Cost'>Investments: </label>
+					<input type='number' name='investments'>
+				</div>
+
+				<div class='button'>
+				<button type='submit' onclick="return test()"> Submit </button>
+				</div>
+			</form>
+			</div>
+
+			<div class='mid-divider'>
+
+			</div>
+
+			<div class ='bottom-body'>
+
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>

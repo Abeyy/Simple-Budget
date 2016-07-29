@@ -1,0 +1,61 @@
+.small-blue{
+	background-color: lightblue;
+	height:100px;
+}
+
+.small-green{
+	text-align: center;
+	background-color: lightgreen;
+	height: 100px;
+}
+
+#log-in-form{
+
+	color:red;
+	padding-top:10px;
+}
+
+
+#log-in-label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+#log-in-button{
+	text-align:center;
+	padding-top:2px;
+}
+
+.left-body-fields{
+	background-color: blue;
+	height:790px;
+}
+
+.top-body{
+	height:385px;
+	background-color:purple;
+}
+
+.mid-divider{
+	height:20px;
+	background-color:white;
+}
+
+.bottom-body{
+	height: 385px;
+	background-color:green;
+}
+
+#user-budget-form{
+	padding-top:10px;
+	padding-right:10px;
+	display:inline-block;
+	text-align: right;
+	float:right;
+}
+
+.budget-input label{
+	color:white;
+}
