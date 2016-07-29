@@ -16,7 +16,7 @@ function simulate_login(){
 function test(){
 	var budget_data = document.getElementById("user-budget-form");
 	var hourly = budget_data.elements['hourly_pay'].value;
-	var time = budget_data.elements[hours_worked].value;
+	var time = budget_data.elements['hours_worked'].value;
 	document.getElementById('display_demo').innerHTML = "BUTTON WORKS";
 	return false; // The form refreshes the page on submit, so onclick was set to return test() and test returns false.
 }
