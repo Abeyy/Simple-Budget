@@ -37,55 +37,98 @@
 <div class='container-fluid'>
 	<div class='row'>
 		<div class='left-body-fields col-md-8'>
-			
-			Hourly Pay:<p id='display_demo'></p>
+			<div class ='display-budget'>
+				Hourly Pay:
+				<div class='budget-item inliner' id='display_weekly_pay'>Hi</div>
+				<br>
+				Tax:
+				<div class='budget-item inliner' id='display_tax_pay'>Hi</div>
+				<br>
+				Travel Costs(Weekly):
+				<div class='budget-item inliner' id='display_travel_cost'>Hi</div>
+				<br>
+				Food Costs(Weekly):
+				<div class='budget-item inliner' id='display_food_cost'>Hi</div>
+				<br>
+				Leisure:
+				<div class='budget-item inliner' id='display_leisure_cost'>Hi</div>
+				<br>
+				Investments(Weekly):
+				<div class='budget-item inliner' id='display_investment_cost'>Hi</div>
+				<br>
+				STATUS:
+				<div class='budget-item inliner' id='display_status'>Hi</div>
+			</div>
+
 		</div>
 		
 		<div class = 'right-body-fields col-md-4'>
 			<div class='top-body'>
-				<form id='user-budget-form'>
-					<div class='budget-input'>
-						<label for='Hourly Pay'> Hourly Pay: </label>
-						<input type='number' name='hourly_pay'> 
-					</div>
+				<div class='user-budget-form'>
+					<form id='user-budget-form'>
+						<div class='budget-input'>
+							<label for='Hourly Pay'> Hourly Pay: </label>
+							<input type='number' name='hourly_pay'> 
+						</div>
 
-					<div class='budget-input'> 
-						<label for='Hours Worked'> Hours Worked: </label>
-						<input type='number' name='hours_worked'>
-					</div>
+						<div class='budget-input'> 
+							<label for='Hours Worked'> Hours Worked: </label>
+							<input type='number' name='hours_worked'>
+						</div>
 
-					<div class='budget-input'>
-						<label for='Tax'> Tax Percentage: </label>
-						<input type='number' name='tax'>
-					</div>
+						<div class='budget-input'>
+							<label for='Tax'> Tax Percentage: </label>
+							<input type='number' name='tax'>
+						</div>
 
-					<div class='budget-input'>
-						<label for='Days Traveling'> Days Traveling:</label>
-						<input type='number' name='days_traveling'>
-					</div>
+						<div class='budget-input'>
+							<label for='Days Traveling'> Days Traveling:</label>
+							<input type='number' name='days_traveling'>
+						</div>
 
-					<div class='budget-input'>
-						<label for='Travel Cost'> Daily Travel Cost:</label>
-						<input type='number' name='travel_cost'>
-					</div>
+						<div class='budget-input'>
+							<label for='Travel Cost'> Daily Travel Cost:</label>
+							<input type='number' name='travel_cost'>
+						</div>
 
-					<div class='budget-input'>
-						<label for='Daily Food Cost'> Daily Food Cost: </label>
-						<input type='number' name='food_cost_daily'>
-					</div>
+						<div class='budget-input'>
+							<label for='Daily Food Cost'> Daily Food Cost: </label>
+							<input type='number' name='food_cost_daily'>
+						</div>
 
-					<div class='budget-input'>
-						<label for='Leisure Cost'> Leisure Cost: </label>
-						<input type='number' name='leisure_cost'>
-					</div>
+						<div class='budget-input'>
+							<label for='Leisure Cost'> Leisure Cost: </label>
+							<input type='number' name='leisure_cost'>
+						</div>
 
-					<div class='budget-input'>
-						<label for='Investment Cost'>Investments: </label>
-						<input type='number' name='investments'>
-					</div>
-				</form>
+						<div class='budget-input'>
+							<label for='Investment Cost'>Investments: </label>
+							<input type='number' name='investments'>
+						</div>
+					</form>
+					<button onclick="display_budget_data()"> Submit Budget </button>
+				</div>
 
-				<button onclick="test()"> Submit Budget </button>
+				<div class='user-savings-form'>
+					<form id='user-savings-form'>
+						<div class='saving-input'>
+							<label for='Weekly Savings Amount'>Weekly Saving Amount:</label>
+							<input type='number' name='saving_cost'>
+						</div>
+
+						<div class='saving-input'>
+							<label for='Amount of Weeks Saved'>Amount of Weeks Saved:</label>
+							<input type='number' name='num_weeks'>
+						</div>
+
+						<div class='saving-input'>
+							<label for='Projected Growth'>Projected Percentage Growth:</label>
+							<input type='number' name='growth'>
+						</div>
+					</form>
+					<button onclick="display_savings_data()">Submit Savings </button>
+				</div>
+				
 			</div>
 
 			<div class='mid-divider'>

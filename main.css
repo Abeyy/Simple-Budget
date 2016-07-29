@@ -1,3 +1,11 @@
+.inliner{
+	display:inline;
+}
+
+.budget-item{
+	color:white;
+}
+
 .small-blue{
 	background-color: lightblue;
 	height:100px;
@@ -59,3 +67,21 @@
 .budget-input label{
 	color:white;
 }
+
+.saving-input label{
+	color:white;
+}
+
+.display-budget{
+	display:inline;
+	font-weight: bold;
+	font-style: italic;
+	color:orange;
+}
+
+#user-savings-form{
+	display:inline-block;
+	text-align:right;
+	float:left;
+}
+
